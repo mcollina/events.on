@@ -25,6 +25,7 @@
   "homepage": "https://github.com/mcollina/events.on#readme",
   "devDependencies": {
     "event-target-shim": "^5.0.1",
+    "promise.allsettled": "^1.0.2",
     "standard": "^14.3.4",
     "tape": "^5.0.1"
   }

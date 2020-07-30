@@ -4,6 +4,7 @@ const { EventTarget } = require('event-target-shim')
 const test = require('tape')
 const events = require('events')
 const { EventEmitter } = events
+const allSettled = require('promise.allsettled')
 
 function build (test, on) {
   test('basic', async function ({ is, deepEqual }) {
@@ -144,7 +145,7 @@ function build (test, on) {
     process.nextTick(function () {
       ee.emit('error', _err)
     })
-    const results = await Promise.allSettled([
+    const results = await allSettled([
       iterable.next(),
       iterable.next(),
       iterable.next()
