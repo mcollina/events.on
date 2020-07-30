@@ -1,0 +1,31 @@
+{
+  "name": "events.on",
+  "version": "0.0.1",
+  "description": "ponyfill for Node.js core events.on",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcollina/events.on.git"
+  },
+  "keywords": [
+    "async",
+    "iterators",
+    "asynciterators",
+    "events",
+    "on"
+  ],
+  "author": "Matteo Collina <hello@matteocollina.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcollina/events.on/issues"
+  },
+  "homepage": "https://github.com/mcollina/events.on#readme",
+  "devDependencies": {
+    "event-target-shim": "^5.0.1",
+    "standard": "^14.3.4",
+    "tape": "^5.0.1"
+  }
+}
