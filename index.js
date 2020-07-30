@@ -2,4 +2,4 @@
 
 const { on } = require('events')
 
-module.events = on || require('./ponyfill')
+module.exports = on || require('./ponyfill')
