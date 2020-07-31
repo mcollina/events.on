@@ -1,6 +1,6 @@
 {
   "name": "events.on",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ponyfill for Node.js core events.on",
   "main": "index.js",
   "scripts": {
