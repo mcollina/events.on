@@ -253,6 +253,11 @@ test('>>> ponyfill', ({ test }) => {
   })
 })
 
+test('module is exported', async function ({ ok }) {
+  const on = require('./index')
+  ok(typeof on === 'function')
+})
+
 if (events.on) {
   test('>>> core', ({ test }) => {
     build(test, events.on)
